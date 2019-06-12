@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="ch.bit.crb360.iktscorecard"
+	title="Design Studio SDK Extension CRB360 IKT Scorecard"
+	version="16.3"
+	vendor="BIT">
+	<component
+		id="IKTScoreCard"
+		title="IKT Scorecard"
+		icon="res/icon.png"
+    	modes="commons m"    
+		handlerType="div"
+		databound="true">
+		<requireJs modes="commons m">res/js/component</requireJs>
+		<property
+			id="dataistobl"
+			title="Data IST+Obl."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="maxCells" value="50000" />
+		</property>
+		<property
+			id="dataist"
+			title="Data Ist"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeMetadata" value="true"/>
+			<option name="includeAxesTuples" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>		
+		<property
+			id="dataerw"
+			title="Data ERW"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property 
+			id="datavaerw" 
+			title="Data VA ERW"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property
+			id="dataobl"
+			title="Data Obl."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property
+			id="datafehlbetra"
+			title="Data Fehlbetr. abs."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property
+			id="datafehlbetrp"
+			title="Data Fehlbetr. pro."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property
+			id="dataresta"
+			title="Data Restbetr. abs."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property
+			id="datarestp"
+			title="Data Restbetr. pro."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property
+			id="datavol"
+			title="Data Volumen"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+			<option name="maxCells" value="50000" />
+		</property>
+		<property id="data" type="ResultSet" title="Data Selection"
+			group="DataBinding" visible="false">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="includeAttributes" value="false" />
+			<option name="maxCells" value="50000" />
+		</property>
+<!-- 	Dimension 1 -->
+		<property 	id="titleheader1" 
+					type="String" 
+					title="Column 1 Header"
+					group="Display" />
+		<property 
+					id="titleheader1sub" 
+					type="String" 
+					title="Column 1 Sub Header"
+					group="Display" />
+		<property 
+					id="dim1name" 
+					type="String" 
+					title="Dimension 1 Name"
+					group="Display" />
+		<property 
+					id="dim1size" 
+					type="String" 
+					title="Dimension 1 Breite"
+					group="Display" />
+		<property 
+					id="dim1visible" 
+					type="boolean" 
+					title="Dimension 1 visble"
+					group="Display" />
+<!-- 	Dimension 2 -->
+		<property 
+					id="titleheader2" 
+					type="String" 
+					title="Column 2 Header"
+					group="Display" />
+		<property 
+					id="titleheader2sub" 
+					type="String" 
+					title="Column 2 Sub Header"
+					group="Display" />
+		<property 
+					id="dim2name" 
+					type="String" 
+					title="Dimension 2 Name"
+					group="Display" />
+		<property 
+					id="dim2size" 
+					type="String" 
+					title="Dimension 2 Breite"
+					group="Display" />
+		<property 
+					id="dim2visible" 
+					type="boolean" 
+					title="Dimension 2 visble"
+					group="Display" />
+<!-- 	Dimension 3 -->					
+		<property 
+					id="titleheader3" 
+					type="String" 
+					title="Column 3 Header"
+					group="Display" />
+		<property 
+					id="titleheader3sub" 
+					type="String" 
+					title="Column 3 Sub Header"
+					group="Display" />
+		<property 
+					id="dim3name" 
+					type="String" 
+					title="Dimension 3 Name"
+					group="Display" />
+		<property 
+					id="dim3size" 
+					type="String" 
+					title="Dimension 3 Breite"
+					group="Display" />
+		<property 
+					id="dim3visible" 
+					type="boolean" 
+					title="Dimension 3 visble"
+					group="Display" />
+<!-- 	Dimension 4 -->															
+		<property 
+					id="titleheader4" 
+					type="String" 
+					title="Column 4 Header"
+					group="Display" />
+		<property 
+					id="titleheader4sub" 
+					type="String" 
+					title="Column 4 Sub Header"
+					group="Display" />
+		<property 
+					id="dim4name" 
+					type="String" 
+					title="Dimension 4 Name"
+					group="Display" />
+		<property 
+					id="dim4size" 
+					type="String" 
+					title="Dimension 4 Breite"
+					group="Display" />
+		<property 
+					id="dim4visible" 
+					type="boolean" 
+					title="Dimension 4 visble"
+					group="Display" />
+<!-- 	Dimension 5 -->					
+		<property 
+					id="titleheader5" 
+					type="String" 
+					title="Column 5 Header"
+					group="Display" />
+		<property 
+					id="titleheader5sub" 
+					type="String" 
+					title="Column 5 Sub Header"
+					group="Display" />
+		<property 
+					id="dim5name" 
+					type="String" 
+					title="Dimension 5 Name"
+					group="Display" />
+		<property 
+					id="dim5size" 
+					type="String" 
+					title="Dimension 5 Breite"
+					group="Display" />
+		<property 
+					id="dim5visible" 
+					type="boolean" 
+					title="Dimension 5 visble"
+					group="Display" />
+<!-- 	Dimension 6 -->
+		<property 
+					id="titleheader6" 
+					type="String" 
+					title="Column 6 Header"
+					group="Display" />
+		<property 
+					id="titleheader6sub" 
+					type="String" 
+					title="Column 6 Sub Header"
+					group="Display" />
+		<property 
+					id="dim6name" 
+					type="String" 
+					title="Dimension 6 Name"
+					group="Display" />
+		<property 
+					id="dim6size" 
+					type="String" 
+					title="Dimension 6 Breite"
+					group="Display" />
+		<property 
+					id="dim6visible" 
+					type="boolean" 
+					title="Dimension 6 visble"
+					group="Display" />
+<!-- 	Dimension 7 -->
+		<property 
+					id="titleheader7" 
+					type="String" 
+					title="Column 7 Header"
+					group="Display" />
+		<property 
+					id="titleheader7sub" 
+					type="String" 
+					title="Column 7 Sub Header"
+					group="Display" />
+		<property 
+					id="dim7name" 
+					type="String" 
+					title="Dimension 7 Name"
+					group="Display" />
+		<property 
+					id="dim7size" 
+					type="String" 
+					title="Dimension 7 Breite"
+					group="Display" />
+		<property 
+					id="dim7visible" 
+					type="boolean" 
+					title="Dimension 7 visble"
+					group="Display" />
+<!-- 	Dimension 8 -->
+		<property 
+					id="titleheader8" 
+					type="String" 
+					title="Column 8 Header"
+					group="Display" />
+		<property 
+					id="titleheader8sub" 
+					type="String" 
+					title="Column 8 Sub Header"
+					group="Display" />
+		<property 
+					id="dim8name" 
+					type="String" 
+					title="Dimension 8 Name"
+					group="Display" />
+		<property 
+					id="dim8size" 
+					type="String" 
+					title="Dimension 8 Breite"
+					group="Display" />
+		<property 
+					id="dim8visible" 
+					type="boolean" 
+					title="Dimension 8 visble"
+					group="Display" />
+<!-- 	Dimension 9 -->
+		<property 
+					id="titleheader9" 
+					type="String" 
+					title="Status/Trend Header"
+					group="Display" />
+		<property 
+					id="titleheader9sub" 
+					type="String" 
+					title="Status/Trend Sub Header"
+					group="Display" />
+		<property 
+					id="dimstatusname" 
+					type="String" 
+					title="Dimension Status Name"
+					group="Display" />
+		<property 
+					id="dimtrendname" 
+					type="String" 
+					title="Dimension Trend Name"
+					group="Display" />
+		<property 
+					id="dim9size" 
+					type="String" 
+					title="Dimension 9 Breite"
+					group="Display" />
+		<property 
+					id="dimstvisible" 
+					type="boolean" 
+					title="Dimension Status/Trend visble"
+					group="Display" />
+<!-- 	Dimension 10 -->
+		<property 
+					id="titleheader10" 
+					type="String" 
+					title="Chart 1 Header"
+					group="Display" />
+		<property 
+					id="titleheader10sub" 
+					type="String" 
+					title="Chart 1 Sub Header"
+					group="Display" />
+		<property 
+					id="dim10size" 
+					type="String" 
+					title="Dimension 10 Breite"
+					group="Display" />
+<!-- 	Dimension 11 -->
+		<property 
+					id="titleheader11" 
+					type="String" 
+					title="Chart 2 Header"
+					group="Display" />
+		<property 
+					id="titleheader11sub" 
+					type="String" 
+					title="Chart 2 Sub Header"
+					group="Display" />
+		<property 
+					id="dim11size" 
+					type="String" 
+					title="Dimension 11 Breite"
+					group="Display" />
+		<property 
+					id="showBarChart" 
+					type="boolean" 
+					title="Show Chart 2"
+					group="Display" 
+					transient="true" />
+<!-- 	Dimension 12 -->
+		<property 
+					id="titleheader12" 
+					type="String" 
+					title="Chart 3 Header"
+					group="Display" />
+		<property 
+					id="titleheader12sub" 
+					type="String" 
+					title="Chart 3 Sub Header"
+					group="Display" />
+		<property 
+					id="dim12size" 
+					type="String" 
+					title="Dimension 12 Breite"
+					group="Display" />
+		<property 
+					id="titlebar1" 
+					type="String" 
+					title="Bar 1 Header"
+					group="Display" />
+		<property 
+					id="titlebar2" 
+					type="String" 
+					title="Bar 2 Header"
+					group="Display" />
+		<property 
+					id="titlebar3" 
+					type="String" 
+					title="Bar 3 Header"
+					group="Display" />
+<!-- 	Chart Einstellungen -->
+		<property 
+					id="showOnlyStatus" 
+					type="boolean" 
+					title="Show only status"
+					group="Display" 
+					transient="true" />
+		<property 
+					id="onclickvalue" 
+					type="String"
+					title="on Click Value"
+					visible="false" />
+		<property
+					id="onSelect"
+					title="On Select"
+					type="ScriptText"
+					group="Events"/>
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">40</defaultValue>
+			<defaultValue property="TOP_MARGIN">40</defaultValue>
+			<defaultValue property="WIDTH">150</defaultValue>
+			<defaultValue property="HEIGHT">200</defaultValue>
+			<defaultValue property="dim1visible">true</defaultValue>
+			<defaultValue property="dim2visible">true</defaultValue>
+			<defaultValue property="dim3visible">true</defaultValue>
+			<defaultValue property="dim4visible">true</defaultValue>
+			<defaultValue property="dim5visible">true</defaultValue>
+			<defaultValue property="dim6visible">true</defaultValue>
+			<defaultValue property="dim7visible">true</defaultValue>
+			<defaultValue property="dim8visible">true</defaultValue>
+			<defaultValue property="dimstvisible">true</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>
