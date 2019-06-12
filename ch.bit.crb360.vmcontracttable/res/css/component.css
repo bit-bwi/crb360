@@ -1,0 +1,142 @@
+.TableFrame {
+	font-size: 10px;
+	font-family: Arial;
+/* 	overflow-y: scroll; */
+}
+
+.ScrollTableFrame {
+	font-size: 10px;
+	font-family: Arial;
+	overflow-y: scroll;
+	height: 95%;
+}
+
+.LockTableFrame {
+	font-size: 10px;
+/*  	overflow-y: scroll;  */
+	height: 95%;
+}
+
+
+.FixedTableFrame {
+	font-size: 10px;
+	font-family: Arial;
+	background: none;
+	overflow: hidden;
+}
+
+#iktscroll {
+	padding-right: 20px;
+	overflow-y: scroll;
+	width: 100%;
+}
+
+.TableGrid {
+	background: #F2F2F2";
+	width: 100%;
+	cellspacing: 0px;
+}
+
+.TableGrid th {
+/* 	text-align: left; */
+	background: none;
+}
+
+.CellBorder {
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.TableHeader {
+	font-weight: bold;
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.TableBody {
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.TableData {
+	border-bottom: 1px solid #B9B9B9;
+	align: right;
+}
+
+.TrippleBar {
+	font-size: 9px;
+	fill: #595959;
+}
+
+.StackedBarChart {
+	cellspacing: 0px;
+}
+
+.StackedBarLeft {
+	background: #D9D9D9;	
+}
+
+.StackedBarRight {
+	background: #92D050;	
+}
+
+.HorizontalBarLeft {
+	background: #FF0000;	
+}
+
+.HorizontalBarRight {
+	background: #92D050;	
+}
+
+.StackedBarRightNeg {
+	background: #FF0000;
+}
+
+.islink {
+/* 	text-decoration: underline; */
+/* 	color: blue; */
+}
+
+.isNegativTL:before {
+            color: #ff0000; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\25C6';
+}
+
+.isNeutralTL:before {
+			content: '\25B2';
+			color: #FDD36C; 
+			font-size: 1.2vw; 
+			text-align: center;
+}
+.isPositivTL:before {
+            color: #92D050; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\25CF';
+}
+
+.isNegativArrow:before {
+            color: #000000; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\2198'
+}
+
+.isPositivArrow:before {
+            color: #000000; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\2197'
+}
+
+.isNeutralArrow:before {
+            color: #000000; 
+            font-size: 1.2vw; 
+            text-align: center;        
+            content: '\2192'
+}
+
+@media (min-width: 1024px) {
+	.TableFrame {
+		font-size: 10px;
+	}
+}

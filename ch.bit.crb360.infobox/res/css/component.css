@@ -1,0 +1,100 @@
+
+.Box {
+            cellspacing: 0px;
+            overflow: auto;
+}
+
+.TrippleBar {
+            font-size: 9px;
+            fill: #595959;
+}
+
+/* .StackedBarChart { */
+/*         cellspacing: 0px; */
+/* } */
+
+/* .StackedBarLeft { */
+/*         background: #D9D9D9;          */
+/* } */
+
+/* .StackedBarRight { */
+/*         background: #92D050;           */
+/* } */
+
+/* .HorizontalBarLeft { */
+/*         background: #FF0000;           */
+/* } */
+
+/* .HorizontalBarRight { */
+/*         background: #92D050;           */
+/* } */
+
+/* .StackedBarRightNeg { */
+/*         background: #FF0000; */
+/* } */
+
+.sdkfontChart1 {
+            font-family: Arial; 
+            font-weight: normal;
+            color: #000000; 
+            font-size: 3vmin;
+            text-align: right; 
+}
+
+.sdkfontChart2 {
+            font-family: Arial; 
+            font-weight: light;
+            color: #000000; 
+            font-size: 0.8vw;
+            text-align: right; 
+}
+
+.isNegativTL:before {
+            color: #ff0000; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\25C6';
+}
+
+.isPositivTL:before {
+            color: #92D050; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\25CF';
+}
+
+.isNegativArrow:before {
+            color: #000000; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\2198'
+}
+
+.isPositivArrow:before {
+            color: #000000; 
+            font-size: 1.2vw; 
+            text-align: center;
+            content: '\2197'
+}
+
+.isNeutralArrow:before {
+            color: #000000; 
+            font-size: 1.2vw; 
+            text-align: center;        
+            content: '\2192'
+}
+
+.textvalues {
+            overflow: hidden;
+}
+
+.islink {
+/*         text-decoration: underline; */
+/*         color: blue; */
+}
+
+@media (min-width: 1024px) {
+            .TableFrame {
+                        font-size: 10px;
+            }
+}

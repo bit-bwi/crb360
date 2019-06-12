@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="ch.bit.crb360.simplecrosstab"
+	title="Design Studio SDK Extension BIT Simple Crosstab"
+	version="16.3"
+	vendor="BIT">
+	<component
+		id="SimpleCrosstab"
+		title="Simple Crosstab"
+		icon="res/icon.png"
+    modes="commons m"
+		handlerType="div"
+		databound="true">
+		<requireJs modes="commons m">res/js/component</requireJs>
+<!-- 		<jsInclude>res/js/component.js</jsInclude> -->
+<!-- 		<cssInclude>res/css/component.css</cssInclude> -->
+		<property
+			id="data"
+			title="Data Selection"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="false"/>
+      <option name="includeAttributes" value="true"/>
+      <option name="includeConditionalFormats" value="true"/>
+		</property>
+		<property
+			id="visSelection"
+			title="Visual Selection"
+			type="String"
+			visible="false"/>
+		<property
+			id="onSelect"
+			title="On Select"
+			type="ScriptText"
+			group="Events"/>
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">40</defaultValue>
+			<defaultValue property="TOP_MARGIN">40</defaultValue>
+			<defaultValue property="WIDTH">150</defaultValue>
+			<defaultValue property="HEIGHT">200</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

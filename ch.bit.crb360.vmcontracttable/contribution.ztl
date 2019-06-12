@@ -1,0 +1,177 @@
+class ch.bit.crb360.vmcontracttable.vmcontracttable extends Component {
+
+	/* Gets text of the header. */
+	String getTitelHeader1() {*
+		return this.titleheader1;
+	*}
+	
+	String getTitelHeader2() {*
+		return this.titleheader2;
+	*}
+	
+	String getTitelHeader3() {*
+		return this.titleheader3;
+	*}
+	
+	String getTitelHeader4() {*
+		return this.titleheader4;
+	*}
+	
+	String getTitelHeader5() {*
+		return this.titleheader5;
+	*}
+	
+	String getTitelHeader6() {*
+		return this.titleheader6;
+	*}
+	
+	String getTitelHeader7() {*
+		return this.titleheader7;
+	*}
+	
+	String getTitelHeader8() {*
+		return this.titleheader8;
+	*}
+
+	String getTitelHeader1Sub() {*
+		return this.titleheader1sub;
+	*}
+
+	String getTitelHeader2Sub() {*
+		return this.titleheader2sub;
+	*}
+
+	String getTitelHeader3Sub() {*
+		return this.titleheader3sub;
+	*}
+
+	String getTitelHeader4Sub() {*
+		return this.titleheader4sub;
+	*}
+
+	String getTitelHeader5Sub() {*
+		return this.titleheader5sub;
+	*}
+
+	String getTitelHeader6Sub() {*
+		return this.titleheader6sub;
+	*}
+	
+	String getTitelHeader7Sub() {*
+		return this.titleheader7sub;
+	*}
+	
+	String getTitelHeader8Sub() {*
+		return this.titleheader8sub;
+	*}
+	
+	String getDim1Name() {*
+		return this.dim1name;
+	*}
+	
+	String getDim1NameB() {*
+		return this.dim1nameb;
+	*}
+	
+	/* Sets text of the Header. */
+	void setTitelHeader1(/* New Text */ String newTitelHeader1) {*
+		this.titleheader1 = newTitelHeader1;
+	*}
+
+	void setTitelHeader2(/* New Text */ String newTitelHeader2) {*
+		this.titleheader2 = newTitelHeader2;
+	*}
+	
+	void setTitelHeader3(/* New Text */ String newTitelHeader3) {*
+		this.titleheader3 = newTitelHeader3;
+	*}
+	
+	void setTitelHeader4(/* New Text */ String newTitelHeader4) {*
+		this.titleheader4 = newTitelHeader4;
+	*}
+	
+	void setTitelHeader5(/* New Text */ String newTitelHeader5) {*
+		this.titleheader5 = newTitelHeader5;
+	*}
+		
+	void setTitelHeader6(/* New Text */ String newTitelHeader6) {*
+		this.titleheader6 = newTitelHeader6;
+	*}	
+	
+	void setTitelHeader7(/* New Text */ String newTitelHeader7) {*
+		this.titleheader7 = newTitelHeader7;
+	*}
+		
+	void setTitelHeader8(/* New Text */ String newTitelHeader8) {*
+		this.titleheader8 = newTitelHeader8;
+	*}
+	
+	void setTitelHeader1Sub(/* New Text */ String newTitelHeader1Sub) {*
+		this.titleheader1sub = newTitelHeader1Sub;
+	*}
+	
+	void setTitelHeader2Sub(/* New Text */ String newTitelHeader2Sub) {*
+		this.titleheader2sub = newTitelHeader2Sub;
+	*}
+	
+	void setTitelHeader3Sub(/* New Text */ String newTitelHeader3Sub) {*
+		this.titleheader3sub = newTitelHeader3Sub;
+	*}
+	
+	void setTitelHeader4Sub(/* New Text */ String newTitelHeader4Sub) {*
+		this.titleheader4sub = newTitelHeader4Sub;
+	*}
+	
+	void setTitelHeader5Sub(/* New Text */ String newTitelHeader5Sub) {*
+		this.titleheader5sub = newTitelHeader5Sub;
+	*}
+	
+	void setTitelHeader6Sub(/* New Text */ String newTitelHeader6Sub) {*
+		this.titleheader6sub = newTitelHeader6Sub;
+	*}
+
+	void setTitelHeader7Sub(/* New Text */ String newTitelHeader7Sub) {*
+		this.titleheader7sub = newTitelHeader7Sub;
+	*}
+		
+	void setTitelHeader8Sub(/* New Text */ String newTitelHeader8Sub) {*
+		this.titleheader8sub = newTitelHeader8Sub;
+	*}
+		
+	void setDim1Name (/* New Text */ String newDim1Name) {*
+		this.dim1name = newDim1Name;
+	*}
+		
+	void setDim1NameB (/* New Text */ String newDim1NameB) {*
+		this.dim1nameb = newDim1NameB;
+	*}
+		
+	void setDim2Name (/* New Text */ String newDim2Name) {*
+		this.dim2name = newDim2Name;
+	*}
+
+	void setDim3Name (/* New Text */ String newDim3Name) {*
+		this.dim3name = newDim3Name;
+	*}
+	
+	void setDim4Name (/* New Text */ String newDim4Name) {*
+		this.dim4name = newDim4Name;
+	*}
+	
+	void setDim5Name (/* New Text */ String newDim5Name) {*
+		this.dim5name = newDim5Name;
+	*}
+	
+	void setDim6Name (/* New Text */ String newDim6Name) {*
+		this.dim6name = newDim6Name;
+	*}
+	
+	void setDim7Name (/* New Text */ String newDim7Name) {*
+		this.dim7name = newDim7Name;
+	*}
+	
+	void setDim8Name (/* New Text */ String newDim8Name) {*
+		this.dim8name = newDim8Name;
+	*}
+	
+}

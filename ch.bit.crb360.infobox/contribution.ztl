@@ -1,0 +1,93 @@
+class ch.bit.crb360.infobox.Infobox extends Component {
+
+	/* Gets text of the header. */
+	String getTitelHeader1() {*
+		return this.titleheader1;
+	*}
+	
+	String getTitelHeader2() {*
+		return this.titleheader2;
+	*}
+	
+	String getTitelHeader3() {*
+		return this.titleheader3;
+	*}
+	
+	String getTitelHeader4() {*
+		return this.titleheader4;
+	*}
+	
+	String getTitelHeader5() {*
+		return this.titleheader5;
+	*}
+
+	String getTitelHeader5Sub() {*
+		return this.titleheader5sub;
+	*}
+	
+	String getTitleKeyFigure() {*
+		return this.titlekeyfigure;
+	*}
+	
+	String getOnClickValue() {*
+		return this.onclickvalue;
+	*}
+
+	Boolean isLowestOn() {*
+		return this.showlowest;
+	*}
+	
+	/* Sets text of the Header. */
+	void setValueLabelNegativ(/* New Text */ String newValueLabelNegativ) {*
+		this.valuelabelnegativ = newValueLabelNegativ;
+	*}
+	
+	void setValueLabelPositiv(/* New Text */ String newValueLabelPositiv) {*
+		this.valuelabelpositiv = newValueLabelPositiv;
+	*}
+	
+	void setTitelHeader1(/* New Text */ String newTitelHeader1) {*
+		this.titleheader1 = newTitelHeader1;
+	*}
+
+	void setTitelHeader2(/* New Text */ String newTitelHeader2) {*
+		this.titleheader2 = newTitelHeader2;
+	*}
+	
+	void setTitelHeader3(/* New Text */ String newTitelHeader3) {*
+		this.titleheader3 = newTitelHeader3;
+	*}
+	
+	void setTitelHeader4(/* New Text */ String newTitelHeader4) {*
+		this.titleheader4 = newTitelHeader4;
+	*}
+	
+	void setTitelHeader5(/* New Text */ String newTitelHeader5) {*
+		this.titleheader5 = newTitelHeader5;
+	*}
+	
+	void setTitelBar1(/* New Text */ String newTitelBar1) {*
+		this.titlebar1 = newTitelBar1;
+	*}
+
+	void setTitelBar2(/* New Text */ String newTitelBar2) {*
+		this.titlebar2 = newTitelBar2;
+	*}
+	
+	void setTitelBar3(/* New Text */ String newTitelBar3) {*
+		this.titlebar3 = newTitelBar3;
+	*}	
+	
+	void setTitleKeyFigure(/* New Text */ String newTitleKeyFigure) {*
+		this.titlekeyfigure = newTitleKeyFigure;
+	*}
+	
+	void setTitelHeader5Sub(/* New Text */ String newTitelHeader5Sub) {*
+		this.titleheader5sub = newTitelHeader5Sub;
+	*}
+	
+	void setLowestOn(/* New Text */ Boolean newStateLowestOn) {*
+		this.showlowest = newStateLowestOn;
+	*}
+	
+}

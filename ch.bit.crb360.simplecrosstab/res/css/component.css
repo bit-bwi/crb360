@@ -1,0 +1,46 @@
+.Table {
+	background: white;
+	overflow: scroll;
+}
+
+.TableHeader {
+	color: #000000;
+	font-size: 1vw;
+	font-family: Arial;
+	font-weight: 600;
+	letter-spacing: 0px;
+	border-bottom: 1px solid rgb(187,187,187);
+}
+
+.TableBody {
+	border-bottom: 1px solid rgb(187,187,187);
+}
+
+.TableData {
+	color: #000000;
+	font-size: 1vw;
+	font-family: Arial;
+	font-weight: 300;
+	letter-spacing: 0px;
+	border-bottom: 1px solid rgb(187,187,187);
+}
+
+.TableCol {
+	color: #000000;
+	font-size: 1vw;
+	font-family: Arial;
+	font-weight: 300;
+	letter-spacing: 0px;
+	border-bottom: 1px solid rgb(187,187,187);
+}
+
+
+@media (min-width: 1024px) {
+    .TableData {
+		font-size: 10px;
+    }
+    
+    .TableHeader {
+    	font-size: 10px;
+    }
+}

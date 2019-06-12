@@ -1,0 +1,18 @@
+
+.isNegativTL:before {
+            color: #ff0000; 
+            text-align: center !important;
+            content: '\25C6';
+}
+
+.isNeutralTL:before {
+            color: #FDD36C; 
+            text-align: center !important;
+            content: '\25B2';
+}
+
+.isPositivTL:before {
+            color: #92D050; 
+            text-align: center !important;
+            content: '\25CF';
+}

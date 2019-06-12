@@ -1,0 +1,98 @@
+.TableFrame {
+	font-size: 10px;
+	font-family: Arial;
+/* 	overflow-y: scroll; */
+}
+
+.ScrollTableFrame {
+	font-size: 10px;
+	font-family: Arial;
+	overflow-y: scroll;
+	height: 95%;
+}
+
+.LockTableFrame {
+	font-size: 10px;
+ 	overflow-y: scroll; 
+	height: 95%;
+}
+
+.LockTableFrame::-webkit-scrollbar {
+  display: none;
+}
+
+.FixedTableFrame {
+	font-size: 10px;
+	font-family: Arial;
+	background: none;
+/* 	text-align: left; */
+}
+
+.TableGrid {
+	background: #F2F2F2";
+	width: 100%;
+	cellspacing: 0px;
+}
+
+.TableGrid th {
+/* 	text-align: left; */
+	background: none;
+}
+
+.CellBorder {
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.TableHeader {
+	font-weight: bold;
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.TableBody {
+	border-bottom: 1px solid #B9B9B9;
+}
+
+.TableData {
+	border-bottom: 1px solid #B9B9B9;
+	align: right;
+}
+
+.TrippleBar {
+	font-size: 9px;
+	fill: #595959;
+}
+
+.StackedBarChart {
+	cellspacing: 0px;
+}
+
+.StackedBarLeft {
+	background: #D9D9D9;	
+}
+
+.StackedBarRight {
+	background: #92D050;	
+}
+
+.HorizontalBarLeft {
+	background: #FF0000;	
+}
+
+.HorizontalBarRight {
+	background: #92D050;	
+}
+
+.StackedBarRightNeg {
+	background: #FF0000;
+}
+
+.islink {
+/* 	text-decoration: underline; */
+/* 	color: blue; */
+}
+
+@media (min-width: 1024px) {
+	.TableFrame {
+		font-size: 10px;
+	}
+}

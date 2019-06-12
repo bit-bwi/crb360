@@ -1,0 +1,164 @@
+class ch.bit.crb360.vmprocurementtable.vmprocurementtable extends Component {
+
+	/* Get text of variables */
+	String getDim1Name() {*
+		return this.dim1name;
+	*}
+	
+	String getDim1NameB() {*
+		return this.dim1nameb;
+	*}
+	
+	String getDim1NameC() {*
+		return this.dim1namec;
+	*}
+			
+	/* Sets text of the Header. */
+	void setTitelHeader1(/* New Text */ String newTitelHeader1) {*
+		this.titleheader1 = newTitelHeader1;
+	*}
+
+	void setTitelHeader2(/* New Text */ String newTitelHeader2) {*
+		this.titleheader2 = newTitelHeader2;
+	*}
+	
+	void setTitelHeader3(/* New Text */ String newTitelHeader3) {*
+		this.titleheader3 = newTitelHeader3;
+	*}
+	
+	void setTitelHeader4(/* New Text */ String newTitelHeader4) {*
+		this.titleheader4 = newTitelHeader4;
+	*}
+	
+	void setTitelHeader5(/* New Text */ String newTitelHeader5) {*
+		this.titleheader5 = newTitelHeader5;
+	*}
+		
+	void setTitelHeader6(/* New Text */ String newTitelHeader6) {*
+		this.titleheader6 = newTitelHeader6;
+	*}	
+	
+	void setTitelHeader7(/* New Text */ String newTitelHeader7) {*
+		this.titleheader7 = newTitelHeader7;
+	*}
+		
+	void setTitelHeader8(/* New Text */ String newTitelHeader8) {*
+		this.titleheader8 = newTitelHeader8;
+	*}
+		
+	void setTitelHeader9(/* New Text */ String newTitelHeader9) {*
+		this.titleheader9 = newTitelHeader9;
+	*}
+		
+	void setTitelHeader10(/* New Text */ String newTitelHeader10) {*
+		this.titleheader10 = newTitelHeader10;
+	*}
+		
+	void setTitelHeader11(/* New Text */ String newTitelHeader11) {*
+		this.titleheader11 = newTitelHeader11;
+	*}
+	
+	void setTitelHeader1Sub(/* New Text */ String newTitelHeader1Sub) {*
+		this.titleheader1sub = newTitelHeader1Sub;
+	*}
+	
+	void setTitelHeader2Sub(/* New Text */ String newTitelHeader2Sub) {*
+		this.titleheader2sub = newTitelHeader2Sub;
+	*}
+	
+	void setTitelHeader3Sub(/* New Text */ String newTitelHeader3Sub) {*
+		this.titleheader3sub = newTitelHeader3Sub;
+	*}
+	
+	void setTitelHeader4Sub(/* New Text */ String newTitelHeader4Sub) {*
+		this.titleheader4sub = newTitelHeader4Sub;
+	*}
+	
+	void setTitelHeader5Sub(/* New Text */ String newTitelHeader5Sub) {*
+		this.titleheader5sub = newTitelHeader5Sub;
+	*}
+	
+	void setTitelHeader6Sub(/* New Text */ String newTitelHeader6Sub) {*
+		this.titleheader6sub = newTitelHeader6Sub;
+	*}
+
+	void setTitelHeader7Sub(/* New Text */ String newTitelHeader7Sub) {*
+		this.titleheader7sub = newTitelHeader7Sub;
+	*}
+		
+	void setTitelHeader8Sub(/* New Text */ String newTitelHeader8Sub) {*
+		this.titleheader8sub = newTitelHeader8Sub;
+	*}
+			
+	void setTitelHeader9Sub(/* New Text */ String newTitelHeader9Sub) {*
+		this.titleheader9sub = newTitelHeader9Sub;
+	*}
+			
+	void setTitelHeader10Sub(/* New Text */ String newTitelHeader10Sub) {*
+		this.titleheader10sub = newTitelHeader10Sub;
+	*}
+			
+	void setTitelHeader11Sub(/* New Text */ String newTitelHeader11Sub) {*
+		this.titleheader11sub = newTitelHeader11Sub;
+	*}
+		
+	void setTitelHeader1Sub2(/* New Text */ String newTitelHeader1Sub2) {*
+		this.titleheader1sub2 = newTitelHeader1Sub2;
+	*}
+	
+	void setTitelHeader2Sub2(/* New Text */ String newTitelHeader2Sub2) {*
+		this.titleheader2sub2 = newTitelHeader2Sub2;
+	*}
+	
+	void setTitelHeader3Sub2(/* New Text */ String newTitelHeader3Sub2) {*
+		this.titleheader3sub2 = newTitelHeader3Sub2;
+	*}
+	
+	void setTitelHeader4Sub2(/* New Text */ String newTitelHeader4Sub2) {*
+		this.titleheader4sub2 = newTitelHeader4Sub2;
+	*}
+	
+	void setTitelHeader5Sub2(/* New Text */ String newTitelHeader5Sub2) {*
+		this.titleheader5sub2 = newTitelHeader5Sub2;
+	*}
+	
+	void setTitelHeader6Sub2(/* New Text */ String newTitelHeader6Sub2) {*
+		this.titleheader6sub2 = newTitelHeader6Sub2;
+	*}
+
+	void setTitelHeader7Sub2(/* New Text */ String newTitelHeader7Sub2) {*
+		this.titleheader7sub2 = newTitelHeader7Sub2;
+	*}
+		
+	void setTitelHeader8Sub2(/* New Text */ String newTitelHeader8Sub2) {*
+		this.titleheader8sub2 = newTitelHeader8Sub2;
+	*}
+			
+	void setTitelHeader9Sub2(/* New Text */ String newTitelHeader9Sub2) {*
+		this.titleheader9sub2 = newTitelHeader9Sub2;
+	*}
+			
+	void setTitelHeader10Sub2(/* New Text */ String newTitelHeader10Sub2) {*
+		this.titleheader10sub2 = newTitelHeader10Sub2;
+	*}
+			
+	void setTitelHeader11Sub2(/* New Text */ String newTitelHeader11Sub2) {*
+		this.titleheader11sub2 = newTitelHeader11Sub2;
+	*}
+
+	void setDim1Name(/* New Text */ String newDim1Name) {*
+		this.dim1name = newDim1Name;
+	*}
+	
+	void setDim1Nameb(/* New Text */ String newDim1Nameb) {*
+		this.dim1nameb = newDim1Nameb;
+	*}
+	
+	void setDim1Namec(/* New Text */ String newDim1Namec) {*
+		this.dim1namec = newDim1Namec;
+	*}
+	
+	void setConditionStatus(/* New Boolean */ Boolean newConditionStatus) {*
+		this.conditionactive = newConditionStatus;
+	*}
+}

@@ -1,0 +1,27 @@
+class ch.bit.crb360.simplecrosstab.SimpleCrosstab extends Component {
+
+	/* Sets the result set displayed in the Simple Crosstab. */
+	void setDataSelection(/* A selection specifying the result set from a data source */ ResultSetSelection selection) {*
+		this.data = this.stringifySelection(selection);
+	*}
+	
+	/* Returns a specification of the selected data cells in the Simple Crosstab. */
+	String getVisualSelection() {*
+		return this.visSelection;
+	*}
+
+	/* Selects data cells in the Simple Crosstab. */
+	void setVisualSelection(/* A selection specifying the selected data cells in the crosstab. */ ResultSetSelection selection) {*
+		this.visSelection = this.stringifySelection(selection);
+	*}
+	
+	/* Returns the selected member. */
+	Member getSelectedMember(/* Dimension of the selected member */ Dimension dimension) {*
+		var jsonVisSelection = {};
+		if (this.visSelection) {
+			jsonVisSelection= JSON.parse(this.visSelection);
+		} 
+		var member = jsonVisSelection[dimension];
+		return this.createMember(dimension, member);
+	*}
+}

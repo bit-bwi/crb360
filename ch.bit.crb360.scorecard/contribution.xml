@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="ch.bit.crb360.scorecard"
+	title="Design Studio SDK Extension CRB360 Scorecard"
+	version="16.3"
+	vendor="BIT">
+	<component
+		id="ScoreCard"
+		title="Scorecard"
+		icon="res/icon.png"
+    	modes="commons m"    
+		handlerType="div"
+		databound="true">
+		<requireJs modes="commons m">res/js/component</requireJs>
+		<property
+			id="dataistobl"
+			title="Data IST+Obl."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+		</property>
+		<property
+			id="dataist"
+			title="Data Ist"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeMetadata" value="true"/>
+			<option name="includeAxesTuples" value="true" />
+		</property>		
+		<property
+			id="dataerw"
+			title="Data ERW"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+		</property>
+		<property 
+			id="datavaerw" 
+			title="Data VA ERW"
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="includeResults" value="true" />
+		</property>
+		<property
+			id="dataobl"
+			title="Data Obl."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+		</property>
+		<property
+			id="datakredita"
+			title="Data Kredit Abs."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+		</property>
+		<property
+			id="datakreditp"
+			title="Data Kredit Pro."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+		</property>
+		<property
+			id="datafehlbetra"
+			title="Data Fehlbetr. abs."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+		</property>
+		<property
+			id="datafehlbetrp"
+			title="Data Fehlbetr. pro."
+			type="ResultCellSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="includeResults" value="true" />
+		</property>
+		<property id="data" type="ResultSet" title="Data Selection"
+			group="DataBinding" visible="false">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="includeAttributes" value="true" />
+			<option name="maxCells" value="30000" />
+		</property>
+<!-- 	Title Überschriften  -->
+		<property 	id="titleheader1" 
+					type="String" 
+					title="Column 1 Header"
+					group="Display" />
+		<property 
+					id="titleheader2" 
+					type="String" 
+					title="Column 2 Header"
+					group="Display" />
+		<property 
+					id="titleheader3" 
+					type="String" 
+					title="Column 3 Header"
+					group="Display" />
+		<property 
+					id="titleheader4" 
+					type="String" 
+					title="Column 4 Header"
+					group="Display" />
+		<property 
+					id="titleheader5" 
+					type="String" 
+					title="Column 5 Header"
+					group="Display" />
+		<property 
+					id="titleheader1sub" 
+					type="String" 
+					title="Column 1 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader2sub" 
+					type="String" 
+					title="Column 2 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader3sub" 
+					type="String" 
+					title="Column 3 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader4sub" 
+					type="String" 
+					title="Column 4 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader5sub" 
+					type="String" 
+					title="Column 5 Sub Header"
+					group="Display" />
+		<property 
+				id="titlebar1" 
+				type="String" 
+				title="Bar 1 Header"
+				group="Display">
+		</property>
+		<property 
+			id="titlebar2" 
+			type="String" 
+			title="Bar 2 Header"
+			group="Display">
+		</property>
+		<property 
+			id="titlebar3" 
+			type="String" 
+			title="Bar 3 Header"
+			group="Display">
+		</property>
+<!-- 	Chart Einstellungen -->
+		<property 
+					id="showNr" 
+					type="boolean" 
+					title="Show Number"
+					group="Display" 
+					transient="true" />
+		<property 
+					id="showDesc" 
+					type="boolean" 
+					title="Show Description"
+					group="Display" />
+		<property 
+					id="showCredit" 
+					type="boolean" 
+					title="Show Credit"
+					group="Display" />
+		<property 
+					id="onclickvalue" 
+					type="String"
+					title="on Click Value"
+					visible="false" />
+		<property
+					id="onSelect"
+					title="On Select"
+					type="ScriptText"
+					group="Events"/>
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">40</defaultValue>
+			<defaultValue property="TOP_MARGIN">40</defaultValue>
+			<defaultValue property="WIDTH">150</defaultValue>
+			<defaultValue property="HEIGHT">200</defaultValue>
+			<defaultValue property="showList">true</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

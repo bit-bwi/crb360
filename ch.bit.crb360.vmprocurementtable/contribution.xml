@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="ch.bit.crb360.vmprocurementtable"
+	title="Design Studio SDK Extension CRB360 VM Procurement table"
+	version="16.3"
+	vendor="BIT">
+	<component
+		id="vmprocurementtable"
+		title="VM Procurement table"
+		icon="res/icon.png"
+    	modes="commons m"    
+		handlerType="div"
+		databound="true">
+		<requireJs modes="commons m">res/js/component</requireJs>
+		<property 	id="data" 
+					type="ResultSet" 
+					title="Data Selection"
+					group="DataBinding" 
+					visible="false">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="includeAttributes" value="false" />
+			<option name="maxCells" value="90000" />
+<!-- 			<option name="useResultWhenUnspecified" value="true" /> -->
+<!-- 			<option name="includeAdditionalResults" value="true" /> -->
+		</property>
+<!-- 	Dimension 1 -->
+		<property 	id="titleheader1" 
+					type="String" 
+					title="Column 1 Header"
+					group="Display" />
+		<property 
+					id="titleheader1sub" 
+					type="String" 
+					title="Column 1 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader1sub2" 
+					type="String" 
+					title="Column 1 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim1name" 
+					type="String" 
+					title="Dimension 1 Name A"
+					group="Display" />
+		<property 
+					id="dim1nameb" 
+					type="String" 
+					title="Dimension 1 Name B"
+					group="Display" />
+		<property 
+					id="dim1namec" 
+					type="String" 
+					title="Dimension 1 Name C"
+					group="Display" />
+		<property 
+					id="dim1named" 
+					type="String" 
+					title="Dimension 1 Name D"
+					group="Display" />
+		<property 
+					id="dim1size" 
+					type="String" 
+					title="Dimension 1 Breite"
+					group="Display" />
+<!-- 	Dimension 2 -->
+		<property 
+					id="titleheader2" 
+					type="String" 
+					title="Column 2 Header"
+					group="Display" />
+		<property 
+					id="titleheader2sub" 
+					type="String" 
+					title="Column 2 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader2sub2" 
+					type="String" 
+					title="Column 2 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim2name" 
+					type="String" 
+					title="Dimension 2 Name"
+					group="Display" />
+		<property 
+					id="dim2extraname" 
+					type="String" 
+					title="Dimension 2 extra Name"
+					group="Display" />
+		<property 
+					id="dim2size" 
+					type="String" 
+					title="Dimension 2 Breite"
+					group="Display" />
+<!-- 	Dimension 3 -->					
+		<property 
+					id="titleheader3" 
+					type="String" 
+					title="Column 3 Header"
+					group="Display" />
+		<property 
+					id="titleheader3sub" 
+					type="String" 
+					title="Column 3 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader3sub2" 
+					type="String" 
+					title="Column 3 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim3name" 
+					type="String" 
+					title="Dimension 3 Name"
+					group="Display" />
+		<property 
+					id="dim3extraname" 
+					type="String" 
+					title="Dimension 3 extra Name"
+					group="Display" />
+		<property 
+					id="dim3size" 
+					type="String" 
+					title="Dimension 3 Breite"
+					group="Display" />
+<!-- 	Dimension 4 -->															
+		<property 
+					id="titleheader4" 
+					type="String" 
+					title="Column 4 Header"
+					group="Display" />
+		<property 
+					id="titleheader4sub" 
+					type="String" 
+					title="Column 4 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader4sub2" 
+					type="String" 
+					title="Column 4 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim4name" 
+					type="String" 
+					title="Dimension 4 Name"
+					group="Display" />
+		<property 
+					id="dim4extraname" 
+					type="String" 
+					title="Dimension 4 extra Name"
+					group="Display" />
+		<property 
+					id="dim4size" 
+					type="String" 
+					title="Dimension 4 Breite"
+					group="Display" />
+<!-- 	Dimension 5 -->					
+		<property 
+					id="titleheader5" 
+					type="String" 
+					title="Column 5 Header"
+					group="Display" />
+		<property 
+					id="titleheader5sub" 
+					type="String" 
+					title="Column 5 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader5sub2" 
+					type="String" 
+					title="Column 5 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim5name" 
+					type="String" 
+					title="Dimension 5 Name"
+					group="Display" />
+		<property 
+					id="dim5extraname" 
+					type="String" 
+					title="Dimension 5 extra Name"
+					group="Display" />
+		<property 
+					id="dim5size" 
+					type="String" 
+					title="Dimension 5 Breite"
+					group="Display" />
+<!-- 	Dimension 6 -->
+		<property 
+					id="titleheader6" 
+					type="String" 
+					title="Column 6 Header"
+					group="Display" />
+		<property 
+					id="titleheader6sub" 
+					type="String" 
+					title="Column 6 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader6sub2" 
+					type="String" 
+					title="Column 6 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim6name" 
+					type="String" 
+					title="Dimension 6 Name"
+					group="Display" />
+		<property 
+					id="dim6extraname" 
+					type="String" 
+					title="Dimension 6 extra Name"
+					group="Display" />
+		<property 
+					id="dim6size" 
+					type="String" 
+					title="Dimension 6 Breite"
+					group="Display" />
+<!-- 	Dimension 7 -->
+		<property 
+					id="titleheader7" 
+					type="String" 
+					title="Column 7 Header"
+					group="Display" />
+		<property 
+					id="titleheader7sub" 
+					type="String" 
+					title="Column 7 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader7sub2" 
+					type="String" 
+					title="Column 7 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim7name" 
+					type="String" 
+					title="Dimension 7 Name"
+					group="Display" />
+		<property 
+					id="dim7extraname" 
+					type="String" 
+					title="Dimension 7 extra Name"
+					group="Display" />
+		<property 
+					id="dim7size" 
+					type="String" 
+					title="Dimension 7 Breite"
+					group="Display" />
+<!-- 	Dimension 8 -->
+		<property 
+					id="titleheader8" 
+					type="String" 
+					title="Column 8 Header"
+					group="Display" />
+		<property 
+					id="titleheader8sub" 
+					type="String" 
+					title="Column 8 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader8sub2" 
+					type="String" 
+					title="Column 8 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim8name" 
+					type="String" 
+					title="Dimension 8 Name"
+					group="Display" />
+		<property 
+					id="dim8extraname" 
+					type="String" 
+					title="Dimension 8 extra Name"
+					group="Display" />
+		<property 
+					id="dim8size" 
+					type="String" 
+					title="Dimension 8 Breite"
+					group="Display" />
+<!-- 	Dimension 9 -->
+		<property 
+					id="titleheader9" 
+					type="String" 
+					title="Column 9 Header"
+					group="Display" />
+		<property 
+					id="titleheader9sub" 
+					type="String" 
+					title="Column 9 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader9sub2" 
+					type="String" 
+					title="Column 9 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim9name" 
+					type="String" 
+					title="Dimension 9 Name"
+					group="Display" />
+		<property 
+					id="dim9extraname" 
+					type="String" 
+					title="Dimension 9 extra Name"
+					group="Display" />
+		<property 
+					id="dim9size" 
+					type="String" 
+					title="Dimension 9 Breite"
+					group="Display" />
+<!-- 	Dimension 10 -->
+		<property 
+					id="titleheader10" 
+					type="String" 
+					title="Column 10 Header"
+					group="Display" />
+		<property 
+					id="titleheader10sub" 
+					type="String" 
+					title="Column 10 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader10sub2" 
+					type="String" 
+					title="Column 10 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim10name" 
+					type="String" 
+					title="Dimension 10 Name"
+					group="Display" />
+		<property 
+					id="dim10extraname" 
+					type="String" 
+					title="Dimension 10 extra Name"
+					group="Display" />
+		<property 
+					id="dim10size" 
+					type="String" 
+					title="Dimension 10 Breite"
+					group="Display" />
+<!-- 	Dimension 11 -->
+		<property 
+					id="titleheader11" 
+					type="String" 
+					title="Column 11 Header"
+					group="Display" />
+		<property 
+					id="titleheader11sub" 
+					type="String" 
+					title="Column 11 Sub Header"
+					group="Display" />
+		<property 
+					id="titleheader11sub2" 
+					type="String" 
+					title="Column 11 Sub Header 2"
+					group="Display" />
+		<property 
+					id="dim11name" 
+					type="String" 
+					title="Dimension 11 Name"
+					group="Display" />
+		<property 
+					id="dim11extraname" 
+					type="String" 
+					title="Dimension 11 extra Name"
+					group="Display" />
+		<property 
+					id="dim11size" 
+					type="String" 
+					title="Dimension 11 Breite"
+					group="Display" />
+<!-- 	General Settings -->
+		<property 
+					id="conditionactive" 
+					type="boolean" 
+					title="Condition active"
+					group="Display" />
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">40</defaultValue>
+			<defaultValue property="TOP_MARGIN">40</defaultValue>
+			<defaultValue property="WIDTH">150</defaultValue>
+			<defaultValue property="HEIGHT">200</defaultValue>
+			<defaultValue property="conditionactive">true</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>
+		

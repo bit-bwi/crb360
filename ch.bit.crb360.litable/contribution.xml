@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="ch.bit.crb360.litable"
+	title="Design Studio SDK Extension LI Table"
+	version="16.3"
+	vendor="BIT">
+	<component
+		id="LITable"
+		title="LI Table"
+		icon="res/icon.png"
+   		modes="commons m"    
+		handlerType="div"
+		databound="true">
+		<requireJs modes="commons m">res/js/component</requireJs>
+		<property
+			id="column1"
+			title="Column 1"
+			type="ResultCellList"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+		</property>
+		<property
+			id="column2"
+			title="Column 2"
+			type="ResultCellList"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+		</property>
+		<property
+			id="column3"
+			title="Column 3"
+			type="ResultCellList"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+		</property>
+		<property
+			id="column4"
+			title="Column 4"
+			type="ResultCellList"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+		</property>
+		<property
+			id="column5"
+			title="Column 5"
+			type="ResultCellList"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+		</property>
+		<property
+			id="column6"
+			title="Column 6"
+			type="ResultCellList"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+		</property>
+		<property
+			id="textyes"
+			title="Text Ja"
+			type="String" 
+			group="Display">
+		</property>
+		<property
+			id="textno"
+			title="Text Nein"
+			type="String" 
+			group="Display">
+		</property>
+		<property
+			id="textfull"
+			title="Text Voll"
+			type="String" 
+			group="Display">
+		</property>
+		<property
+			id="textpartial"
+			title="Text Teil"
+			type="String" 
+			group="Display">
+		</property>
+		<property
+			id="textq"
+			title="Text Quartal"
+			type="String" 
+			group="Display">
+		</property>
+		<property
+			id="texteinheitli"
+			title="Text Einheit LI"
+			type="String" 
+			group="Display">
+		</property>
+		<property 
+			id="data" 
+			type="ResultSet" 
+			title="Data Selection"
+			group="DataBinding" 
+			visible="false">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="includeAttributes" value="true"></option>
+		</property>
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">40</defaultValue>
+			<defaultValue property="TOP_MARGIN">40</defaultValue>
+			<defaultValue property="WIDTH">150</defaultValue>
+			<defaultValue property="HEIGHT">200</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

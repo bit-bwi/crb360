@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sdkExtension
+	xmlns="http://www.sap.com/bi/zen/sdk"
+	id="ch.bit.crb360.infobox"
+	title="Design Studio SDK Extension CRB360 Infobox"
+	version="16.3"
+	vendor="BIT">
+	<component
+		id="Infobox"
+		title="Infobox"
+		icon="res/icon.png"
+    	modes="commons m"    
+		handlerType="div"
+		databound="true">
+		<requireJs modes="commons m">res/js/component</requireJs>
+		<property
+			id="dataistobl"
+			title="Data IST+Obl."
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="dataist"
+			title="Data Ist"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>		
+		<property
+			id="dataerw"
+			title="Data ERW"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property 
+			id="datavaerw" 
+			title="Data VA ERW"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="dataobl"
+			title="Data Obl."
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="datakredita"
+			title="Data Kredit Abs."
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="datakreditp"
+			title="Data Kredit Pro."
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="datafehlbetra"
+			title="Data Fehlbetr. abs."
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="datafehlbetrp"
+			title="Data Fehlbetr. pro."
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="datafehlbetram1"
+			title="Data Fehlbetr. abs. Vormonat"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="databar2add"
+			title="Data Bar 2 (Zusatz)"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property
+			id="databar3add"
+			title="Data Bar 3 (Zusatz)"
+			type="ResultSet"
+			group="DataBinding">
+			<option name="includeFormattedData" value="true"/>
+			<option name="includeData" value="true"/>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property id="data" type="ResultSet" title="Data Selection"
+			group="DataBinding" visible="false">
+			<option name="includeFormattedData" value="true" />
+			<option name="includeData" value="true" />
+			<option name="includeAttributes" value="true"></option>
+			<option name="allDataOnEmptySelection" value="false"/>
+		</property>
+		<property 
+			id="titlekeyfigure" 
+			type="String" 
+			title="Key figure title"
+			group="Display">
+		</property>
+		<property 
+			id="valuelabelnegativ" 
+			type="String" 
+			title="Value Label negativ"
+			group="Display">
+		</property>
+		<property 
+			id="valuelabelpositiv" 
+			type="String" 
+			title="Value Label positiv"
+			group="Display">
+		</property>
+		<property 
+			id="titlebar1" 
+			type="String" 
+			title="Bar 1 Header"
+			group="Display">
+		</property>
+		<property 
+			id="colorbar1" 
+			type="Color" 
+			title="Color Bar 1"
+			group="Display">
+		</property>
+		<property 
+			id="titlebar2" 
+			type="String" 
+			title="Bar 2 Header"
+			group="Display">
+		</property>
+		<property 
+			id="colorbar2" 
+			type="Color" 
+			title="Color Bar 2"
+			group="Display">
+		</property>
+		<property 
+			id="titlebar3" 
+			type="String" 
+			title="Bar 3 Header"
+			group="Display">
+		</property>
+		<property 
+			id="colorbar3" 
+			type="Color" 
+			title="Color Bar 3"
+			group="Display">
+		</property>
+		<property 
+			id="showbars" 
+			type="boolean" 
+			title="Show Bars"
+			group="Display">
+		</property>
+		<property 
+			id="signs" 
+			type="String" 
+			title="Traffic Light/Arrows"
+			group="Display">
+		</property>
+		<property 
+			id="onclickvalue" 
+			type="String"
+			title="on Click Value"
+			visible="false">
+		</property>
+		<property
+			id="onSelect"
+			title="On Select"
+			type="ScriptText"
+			group="Events"/>
+		<initialization>
+			<defaultValue property="LEFT_MARGIN">40</defaultValue>
+			<defaultValue property="TOP_MARGIN">40</defaultValue>
+			<defaultValue property="WIDTH">150</defaultValue>
+			<defaultValue property="HEIGHT">200</defaultValue>
+			<defaultValue property="showbars">true</defaultValue>
+			<defaultValue property="signs">TL</defaultValue>
+			<defaultValue property="colorbar1">#7F7F7F</defaultValue>
+			<defaultValue property="colorbar2">#3366CC</defaultValue>
+			<defaultValue property="colorbar3">#ADC1EB</defaultValue>
+		</initialization>
+	</component>
+</sdkExtension>

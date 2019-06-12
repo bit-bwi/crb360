@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: ch.bit.crb360.vmcontracttable;singleton:=true
+Bundle-Name: Design Studio SDK Extension CRB360 VM Contract table
+Bundle-Version: 16.3.0.201708161532
+Require-Bundle: com.sap.ip.bi.zen.rt.components.sdk.eclipse
+Bundle-ManifestVersion: 2
+Bundle-Vendor: BIT
+
+

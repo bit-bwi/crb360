@@ -1,0 +1,46 @@
+class ch.bit.crb360.litable.LITable extends Component {
+
+	/* Sets the data displayed in the first column. */
+	void setColumn1Selection(/* A selection specifying a single column (or row) of keyfigures from a data source */ ResultCellListSelection selection) {*
+		this.column1 = this.stringifySelection(selection);
+	*}
+
+	/* Sets the data displayed in the second column. */
+	void setColumn2Selection(/* A selection specifying a single column (or row) of keyfigures from a data source */ ResultCellListSelection selection) {*
+		this.column2 = this.stringifySelection(selection);
+	*}
+
+	/* Sets the data displayed in the third column. */
+	void setColumn3Selection(/* A selection specifying a single column (or row) of keyfigures from a data source */ ResultCellListSelection selection) {*
+		this.column3 = this.stringifySelection(selection);
+	*}
+
+	/* Sets the data displayed in the forth column. */
+	void setColumn4Selection(/* A selection specifying a single column (or row) of keyfigures from a data source */ ResultCellListSelection selection) {*
+		this.column4 = this.stringifySelection(selection);
+	*}
+	
+	void setTextYes(/* New Text */ String newTextYes) {*
+		this.textyes = newTextYes;
+	*}
+	
+	void setTextNo(/* New Text */ String newTextNo) {*
+		this.textno = newTextNo;
+	*}
+	
+	void setTextFull(/* New Text */ String newTextFull) {*
+		this.textfull = newTextFull;
+	*}
+	
+	void setTextPartial(/* New Text */ String newTextPartial) {*
+		this.textpartial = newTextPartial;
+	*}
+	
+	void setTextQ(/* New Text */ String newTextQ) {*
+		this.textq = newTextQ;
+	*}
+	
+	void setTextEinheitLI(/* New Text */ String newTextEinheitLI) {*
+		this.texteinheitli = newTextEinheitLI;
+	*}
+}
