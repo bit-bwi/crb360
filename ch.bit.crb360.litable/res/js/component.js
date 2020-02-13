@@ -4,7 +4,7 @@ define(["sap/designstudio/sdk/component", "css!../css/component.css"], function(
 // sap.designstudio.sdk.Component.subclass("ch.bit.crb360.litable.LITable", function() {	*/
 	
 	/***********************************************************************/
-	/********* ch.bit.crb360.litable        v 1.0.0.0.20171219 *************/
+	/********* ch.bit.crb360.litable        v 1.1.0.0.20190612 *************/
 	/***********************************************************************/
 	
 	var CSS_CLASS_DIV = "sapzencrosstab-TableDiv";

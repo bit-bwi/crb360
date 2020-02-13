@@ -2,7 +2,7 @@ define(["sap/designstudio/sdk/component", "css!../css/component.css"], function(
 Component.subclass("ch.bit.crb360.infobox.Infobox", function() {
 
 	/***********************************************************************/
-	/********* ch.bit.crb360.infobox        v 1.0.0.0.20171219 *************/
+	/********* ch.bit.crb360.infobox        v 1.1.0.0.20190612 *************/
 	/***********************************************************************/
 	
 	

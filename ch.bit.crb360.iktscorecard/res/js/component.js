@@ -2,7 +2,7 @@ define(["sap/designstudio/sdk/component", "css!../css/component.css"], function(
 Component.subclass("ch.bit.crb360.iktscorecard.IKTScoreCard", function() {
 
 	/***********************************************************************/
-	/********* ch.bit.crb360.iktscorecard      v 1.0.0.0.20180319 **********/
+	/********* ch.bit.crb360.iktscorecard      v 1.1.0.0.20190612 **********/
 	/***********************************************************************/
 	
 		var meta_data = null;
